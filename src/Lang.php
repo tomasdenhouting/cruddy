@@ -26,9 +26,9 @@ class Lang
     /**
      * Init lang.
      *
-     * @param \Symfony\Component\Translation\TranslatorInterface $translator
+     * @param \Illuminate\Contracts\Translation\Translator $translator
      */
-    public function __construct(TranslatorInterface $translator)
+    public function __construct(\Illuminate\Contracts\Translation\Translator $translator)
     {
         $this->translator = $translator;
     }

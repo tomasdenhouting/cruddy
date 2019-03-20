@@ -131,6 +131,7 @@ class EntityController extends Controller
 
         $model = $data->save();
 
+        $actionResult = null;
         if ($form instanceof Entity && $action) {
             $actionResult = $this->executeActionOnModel($form, $action, $model);
         }
